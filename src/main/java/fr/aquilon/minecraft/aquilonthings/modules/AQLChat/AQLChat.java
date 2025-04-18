@@ -41,14 +41,7 @@ import java.util.UUID;
         @Cmd(value = AQLChat.COMMAND_QMSG, desc = "Envoi de messages formatés"),
         @Cmd(value = AQLChat.COMMAND_MSG, desc = "Message privé à un joueur"),
         @Cmd(value = AQLChat.COMMAND_MSG_REPLY, desc = "Répondre à un message privé")
-<<<<<<< HEAD
-    },
-    inPackets = @InPacket(AQLChat.CHANNEL_CHAT_ICON),
-    outPackets = @OutPacket(AQLChat.CHANNEL_CHAT_ICON)
-)
-=======
 }, inPackets = @InPacket(AQLChat.CHANNEL_CHAT_ICON), outPackets = @OutPacket(AQLChat.CHANNEL_CHAT_ICON))
->>>>>>> 4054c12 (feat: add w and r command for private messages)
 public class AQLChat implements IModule {
     public static final ModuleLogger LOGGER = ModuleLogger.get();
 
